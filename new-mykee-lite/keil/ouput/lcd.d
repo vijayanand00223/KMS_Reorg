@@ -1,0 +1,14 @@
+.\ouput\lcd.o: ..\src\Middleware\LCD\LCD.c
+.\ouput\lcd.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\lcd.o: ..\src\Middleware\LCD\LCD.h
+.\ouput\lcd.o: ..\src\ticker_itrp.h
+.\ouput\lcd.o: ..\src\menu_main.h
+.\ouput\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\lcd.o: ..\src\sbl_config.h
+.\ouput\lcd.o: ..\src\common\compiler_port.h
+.\ouput\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\lcd.o: ..\src\aes.h

@@ -1,0 +1,13 @@
+.\ouput\display_msg.o: ..\src\display_msg.c
+.\ouput\display_msg.o: ..\src\menu_main.h
+.\ouput\display_msg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\display_msg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\display_msg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\display_msg.o: ..\src\ticker_itrp.h
+.\ouput\display_msg.o: ..\src\sbl_config.h
+.\ouput\display_msg.o: ..\src\common\compiler_port.h
+.\ouput\display_msg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\display_msg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\display_msg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\display_msg.o: ..\src\aes.h
+.\ouput\display_msg.o: ..\src\nxp\devices\lpc23xx\lpc23xx.H

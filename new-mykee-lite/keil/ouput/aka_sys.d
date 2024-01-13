@@ -1,0 +1,16 @@
+.\ouput\aka_sys.o: ..\src\aka_sys.c
+.\ouput\aka_sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\aka_sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\aka_sys.o: ..\src\nxp\devices\lpc23xx\lpc23xx.H
+.\ouput\aka_sys.o: ..\src\menu_main.h
+.\ouput\aka_sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\aka_sys.o: ..\src\ticker_itrp.h
+.\ouput\aka_sys.o: ..\src\sbl_config.h
+.\ouput\aka_sys.o: ..\src\common\compiler_port.h
+.\ouput\aka_sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\aka_sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\aka_sys.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\aka_sys.o: ..\src\aes.h
+.\ouput\aka_sys.o: ..\src\Middleware\LCD\LCD.h
+.\ouput\aka_sys.o: ..\src\Middleware\BUZZER\BUZZER.h
+.\ouput\aka_sys.o: ..\src\Middleware\CLOCK_CALNDR\CLOCK_CALNDR.h

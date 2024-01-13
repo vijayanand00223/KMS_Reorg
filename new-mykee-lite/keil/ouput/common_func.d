@@ -1,0 +1,14 @@
+.\ouput\common_func.o: ..\src\common_func.c
+.\ouput\common_func.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\common_func.o: ..\src\menu_main.h
+.\ouput\common_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\common_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\common_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\common_func.o: ..\src\ticker_itrp.h
+.\ouput\common_func.o: ..\src\sbl_config.h
+.\ouput\common_func.o: ..\src\common\compiler_port.h
+.\ouput\common_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\common_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\common_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\common_func.o: ..\src\aes.h
+.\ouput\common_func.o: ..\src\Middleware\LCD\LCD.h

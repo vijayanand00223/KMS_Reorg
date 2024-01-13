@@ -1,0 +1,739 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: duwarakesh D, saka, LIC=14HV2-90S4W-SB3EJ-UDKRN-G79G1-XWRPH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARM.DLL V5.28.0.0
+Dialog DLL:      DARMP.DLL V1.53.0.0 
+<h2>Project:</h2>
+F:\Sterna\KMS new structure\new-mykee-lite-main-reorg-13JAN24\new-mykee-lite-main\keil\Mykee.uvprojx
+Project File Date:  01/13/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Abloy keyaxxess'
+compiling retarget.c...
+assembling startup_lpc23xx.s...
+compiling debug.c...
+..\src\debug.c(31): warning:  #940-D: missing return statement at end of non-void function "fputc" 
+  }
+..\src\debug.c: 1 warning, 0 errors
+compiling target.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\target.c(117): warning:  #223-D: function "rtc_init" declared implicitly
+      rtc_init();
+..\src\target.c: 3 warnings, 0 errors
+compiling mci_menu.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\mci_menu.c(164): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  		key_events_t[uci].exist = EXIST;
+..\src\mci_menu.c(155): warning:  #177-D: variable "ucstate"  was declared but never referenced
+  	u8_t  ucstate; //Temporary Copy of the Key Status 
+..\src\mci_menu.c(610): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(user_t.user_id ==-1)
+..\src\mci_menu.c(639): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(user_t.user_id ==-1)
+..\src\mci_menu.c(686): warning:  #223-D: function "toupper" declared implicitly
+      ch = toupper(ch);    
+..\src\mci_menu.c(687): warning:  #223-D: function "isxdigit" declared implicitly
+      if (!isxdigit(ch))
+..\src\mci_menu.c(751): warning:  #167-D: argument of type "u8_t *" is incompatible with parameter of type "char *restrict"
+  		strcpy(writevalue,"");
+..\src\mci_menu.c(752): warning:  #167-D: argument of type "u8_t *" is incompatible with parameter of type "char *"
+  		return_flg=read_hexavalue(writevalue,12);
+..\src\mci_menu.c(754): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+  		if(return_flg<12 || return_flg==-1)
+..\src\mci_menu.c: 11 warnings, 0 errors
+assembling readfifo.S...
+compiling login_menu.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\login_menu.c(322): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  						if((key_events_t[j].exist == EXIST) && (key1_t[j].flag))
+..\src\login_menu.c(50): warning:  #550-D: variable "uik2"  was set but never used
+  	static u32_t uik2;
+..\src\login_menu.c(53): warning:  #550-D: variable "uikey_flag"  was set but never used
+  	u32_t uikey_flag=0;
+..\src\login_menu.c(445): warning:  #223-D: function "finger_module_menu" declared implicitly
+  										finger_module_menu();
+..\src\login_menu.c(698): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(user_t.card==-1)
+..\src\login_menu.c(713): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(user_t.user_id ==-1)
+..\src\login_menu.c(1008): warning:  #68-D: integer conversion resulted in a change of sign
+  	if(endtick_value!=-1)
+..\src\login_menu.c(1010): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(sys_t.serial!=-1)
+..\src\login_menu.c: 10 warnings, 0 errors
+compiling protocol_comm.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\cpu_endian.h(247): warning:  #47-D: incompatible redefinition of macro "STORE16LE"  (declared at line 221 of "..\src\common\endian.h")
+  #define STORE16LE(a, p) \
+..\src\cpu_endian.h(252): warning:  #47-D: incompatible redefinition of macro "STORE16BE"  (declared at line 226 of "..\src\common\endian.h")
+  #define STORE16BE(a, p) \
+..\src\cpu_endian.h(257): warning:  #47-D: incompatible redefinition of macro "STORE24LE"  (declared at line 231 of "..\src\common\endian.h")
+  #define STORE24LE(a, p) \
+..\src\cpu_endian.h(263): warning:  #47-D: incompatible redefinition of macro "STORE24BE"  (declared at line 237 of "..\src\common\endian.h")
+  #define STORE24BE(a, p) \
+..\src\cpu_endian.h(269): warning:  #47-D: incompatible redefinition of macro "STORE32LE"  (declared at line 243 of "..\src\common\endian.h")
+  #define STORE32LE(a, p) \
+..\src\cpu_endian.h(276): warning:  #47-D: incompatible redefinition of macro "STORE32BE"  (declared at line 250 of "..\src\common\endian.h")
+  #define STORE32BE(a, p) \
+..\src\cpu_endian.h(301): warning:  #47-D: incompatible redefinition of macro "STORE64LE"  (declared at line 257 of "..\src\common\endian.h")
+  #define STORE64LE(a, p) \
+..\src\cpu_endian.h(312): warning:  #47-D: incompatible redefinition of macro "STORE64BE"  (declared at line 268 of "..\src\common\endian.h")
+  #define STORE64BE(a, p) \
+..\src\protocol_comm.c(184): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  	key_events_t[uckey_num].exist =(u32_t) EXIST;
+..\src\protocol_comm.c: 11 warnings, 0 errors
+compiling common_func.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\common_func.c(133): warning:  #550-D: variable "uis"  was set but never used
+      u32_t uih, uimin, uis, uid, uim, uiy;
+..\src\common_func.c: 3 warnings, 0 errors
+compiling display_msg.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\display_msg.c: 2 warnings, 0 errors
+compiling msg_menu.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\msg_menu.c(203): warning:  #68-D: integer conversion resulted in a change of sign
+                  return -1;
+..\src\msg_menu.c(208): warning:  #68-D: integer conversion resulted in a change of sign
+  					return -2;
+..\src\msg_menu.c(212): warning:  #68-D: integer conversion resulted in a change of sign
+  					return -3;
+..\src\msg_menu.c(224): warning:  #68-D: integer conversion resulted in a change of sign
+                  return -1;
+..\src\msg_menu.c(236): warning:  #68-D: integer conversion resulted in a change of sign
+  					return -4;
+..\src\msg_menu.c(241): warning:  #68-D: integer conversion resulted in a change of sign
+              return -1;
+..\src\msg_menu.c(674): warning:  #111-D: statement is unreachable
+  	return -1;
+..\src\msg_menu.c: 9 warnings, 0 errors
+compiling telnet_server.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\telnet_server.c(298): warning:  #167-D: argument of type "u8_t *" is incompatible with parameter of type "char *restrict"
+  		strcpy(strdata,BOX_VERSION);
+..\src\telnet_server.c(300): warning:  #167-D: argument of type "u8_t *" is incompatible with parameter of type "const char *"
+  		i=strlen(strdata);
+..\src\telnet_server.c: 4 warnings, 0 errors
+compiling main.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\main.c(158): warning:  #223-D: function "wdt_reset_feed" declared implicitly
+  			wdt_reset_feed();
+..\src\main.c(162): warning:  #223-D: function "tcpClientfwTask" declared implicitly
+  		tcpClientfwTask();
+..\src\main.c(188): warning:  #223-D: function "wdt_reset_feed" declared implicitly
+  			wdt_reset_feed();
+..\src\main.c(192): warning:  #223-D: function "tcpClientfwTask" declared implicitly
+  		tcpClientfwTask();
+..\src\main.c(600): warning:  #223-D: function "telnetServerInit" declared implicitly
+  	error = telnetServerInit();
+..\src\main.c(600): warning:  #188-D: enumerated type mixed with another type
+  	error = telnetServerInit();
+..\src\main.c(714): warning:  #223-D: function "bio_verification" declared implicitly
+  			bio_verification();
+..\src\main.c: 9 warnings, 0 errors
+compiling util_menu.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\util_menu.c(67): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(uiserial_no != -1)
+..\src\util_menu.c(127): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(uicust_id != -1)
+..\src\util_menu.c(309): warning:  #223-D: function "wdt_reset_feed" declared implicitly
+  	wdt_reset_feed();
+..\src\util_menu.c(787): warning:  #223-D: function "pchar" declared implicitly
+  			pchar(read_rfideas[i]);
+..\src\util_menu.c(862): warning:  #61-D: integer operation result is out of range
+  						if (AD0DR1 & (1<<31)) 				//AC
+..\src\util_menu.c(862): warning:  #68-D: integer conversion resulted in a change of sign
+  						if (AD0DR1 & (1<<31)) 				//AC
+..\src\util_menu.c(887): warning:  #61-D: integer operation result is out of range
+  						if (AD0DR0 & (1<<31)) //BATTERY
+..\src\util_menu.c(887): warning:  #68-D: integer conversion resulted in a change of sign
+  						if (AD0DR0 & (1<<31)) //BATTERY
+..\src\util_menu.c(1386): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  		if ((key_events_t[uci].exist ==(u32_t) EXIST) &&((u32_t)key_events_t[uci].status ==(u32_t)LOCK_OPEN))//if key removed
+..\src\util_menu.c: 11 warnings, 0 errors
+compiling aka_sys.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\aka_sys.c: 2 warnings, 0 errors
+compiling ble_commn.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\ble_commn.c(88): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  				else if((key_events_t[uci].status ==(u8_t) LOCK_OPEN)&&(key_events_t[uci].exist==(u32_t) EXIST))
+..\src\ble_commn.c(59): warning:  #550-D: variable "j"  was set but never used
+  	u8_t i=0,uci=0,j=0;
+..\src\ble_commn.c: 4 warnings, 0 errors
+compiling key_menu.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\key_menu.c(1623): warning:  #550-D: variable "key_flg"  was set but never used
+  	u8_t  uclk[MAX_KEYS],key_flg[MAX_KEYS];
+..\src\key_menu.c(1624): warning:  #550-D: variable "ucprev_state"  was set but never used
+  	u8_t 	ucprev_state[MAX_KEYS];
+..\src\key_menu.c: 4 warnings, 0 errors
+compiling aesencriptionwipro.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\aesencriptionwipro.c: 2 warnings, 0 errors
+compiling tcp_client_event.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\tcp_client_event.c(290): warning:  #223-D: function "EncyptPIAMPacket" declared implicitly
+  		EncyptPIAMPacket(buffer);
+..\src\tcp_client_event.c(417): warning:  #223-D: function "DecyptPIAMPacket" declared implicitly
+  								DecyptPIAMPacket(buffer,length);
+..\src\tcp_client_event.c(441): warning:  #223-D: function "telnetServerTask" declared implicitly
+  					telnetServerTask();
+..\src\tcp_client_event.c(444): warning:  #223-D: function "wdt_reset_feed" declared implicitly
+  						wdt_reset_feed();
+..\src\tcp_client_event.c(476): warning:  #223-D: function "DecyptPIAMPacket" declared implicitly
+  						DecyptPIAMPacket(buffer,length);
+..\src\tcp_client_event.c(457): warning:  #177-D: variable "charac"  was declared but never referenced
+  		char charac[3];
+..\src\tcp_client_event.c: 8 warnings, 0 errors
+compiling os_port_none.c...
+compiling date_time.c...
+compiling tcp_client_fw.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\tcp_client_fw.c: 2 warnings, 0 errors
+compiling str.c...
+compiling bio.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\bio.c(496): warning:  #68-D: integer conversion resulted in a change of sign
+  	else  if(usercode==-3)
+..\src\bio.c(501): warning:  #68-D: integer conversion resulted in a change of sign
+  	else if(usercode==-4)
+..\src\bio.c(555): warning:  #223-D: function "pchar" declared implicitly
+  	pchar(ch);
+..\src\bio.c(646): warning:  #68-D: integer conversion resulted in a change of sign
+  		if(iuser_code==-4)
+..\src\bio.c(650): warning:  #68-D: integer conversion resulted in a change of sign
+  		else if(iuser_code==-3)
+..\src\bio.c(815): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		for (uci = *count-1; uci >=0; uci--) 		 //if user already have card and change to new card,
+..\src\bio.c(893): warning:  #68-D: integer conversion resulted in a change of sign
+    	if(user_t.user_id ==0xFFFFFFFF ||user_t.user_id ==-1)
+..\src\bio.c(1035): warning:  #68-D: integer conversion resulted in a change of sign
+    	if(user_t.user_id ==0xFFFFFFFF ||user_t.user_id ==-1)
+..\src\bio.c(1152): warning:  #111-D: statement is unreachable
+  	p1str("Return to main menu");
+..\src\bio.c(1220): warning:  #68-D: integer conversion resulted in a change of sign
+  		 if(user_t.user_id ==0xFFFFFFFF || user_t.user_id ==-1)
+..\src\bio.c: 12 warnings, 0 errors
+compiling cpu_endian.c...
+compiling tcp_client_hb.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\tcp_client_hb.c(354): warning:  #61-D: integer operation result is out of range
+  		if (AD0DR1 & (1<<31)) //AC
+..\src\tcp_client_hb.c(354): warning:  #68-D: integer conversion resulted in a change of sign
+  		if (AD0DR1 & (1<<31)) //AC
+..\src\tcp_client_hb.c(361): warning:  #61-D: integer operation result is out of range
+  		if (AD0DR0 & (1<<31)) //BATTERY
+..\src\tcp_client_hb.c(361): warning:  #68-D: integer conversion resulted in a change of sign
+  		if (AD0DR0 & (1<<31)) //BATTERY
+..\src\tcp_client_hb.c(370): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  		EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(323): warning:  #177-D: variable "uci"  was declared but never referenced
+  	u8_t uci;
+..\src\tcp_client_hb.c(432): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  				EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(455): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  				EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(562): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  				EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(587): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  					EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(608): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  					EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(618): warning:  #223-D: function "delete_user" declared implicitly
+  		if(delete_user(user_id_temp))
+..\src\tcp_client_hb.c(638): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  		EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(648): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  				key1_t[key_no].exist =(u32_t) EXIST;
+..\src\tcp_client_hb.c(676): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  				EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(686): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  				key1_t[flag_return].exist =(u32_t) NOT_EXIST;	
+..\src\tcp_client_hb.c(700): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  		EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(717): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  		EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(732): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  		EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(765): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  		EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(783): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  		EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(812): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  			EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(871): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  						if(task_t.exist==(u32_t) EXIST)
+..\src\tcp_client_hb.c(906): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  				EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(931): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  					EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(952): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  					EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(962): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  					task_t.exist =(u32_t) EXIST;
+..\src\tcp_client_hb.c(1038): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  					EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(1067): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  					EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(1090): warning:  #167-D: argument of type "char_t *" is incompatible with parameter of type "uint8_t *"
+  					EncyptPIAMPacket_hb(buffer_len-1,buffer);
+..\src\tcp_client_hb.c(1119): warning:  #223-D: function "tcpClientfwInit" declared implicitly
+  	tcpClientfwInit();
+..\src\tcp_client_hb.c(386): warning:  #550-D: variable "user_pin_temp"  was set but never used
+  	u32_t user_pin_temp=1234;
+..\src\tcp_client_hb.c(1250): warning:  #223-D: function "DecyptPIAMPacket_hb" declared implicitly
+  		DecyptPIAMPacket_hb(rxbuffer,length);		
+..\src\tcp_client_hb.c: 35 warnings, 0 errors
+compiling net.c...
+compiling net_mem.c...
+compiling nic.c...
+compiling task_management.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\task_management.c(45): warning:  #223-D: function "find_user_sd1" declared implicitly
+  	sdlocation=find_user_sd1(user_code_main);
+..\src\task_management.c(46): warning:  #68-D: integer conversion resulted in a change of sign
+  	if(sdlocation!=-1)
+..\src\task_management.c(113): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  				if((key_events_t[uckey_no].status == LOCK_CLOSED) && (key1_t[uckey_no].enabled!=0) && (key1_t[uckey_no].exist == EXIST))
+..\src\task_management.c(117): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  				else if((key_events_t[uckey_no].status == LOCK_OPEN)&&(key_events_t[uckey_no].exist==EXIST))
+..\src\task_management.c(573): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  						else if((key_events_t[uci].status ==(u8_t) LOCK_OPEN)&&(key_events_t[uci].exist==(u32_t) EXIST))
+..\src\task_management.c(700): warning:  #111-D: statement is unreachable
+  						if(ucremove_mode==2U)
+..\src\task_management.c(727): warning:  #223-D: function "get_menu_key1" declared implicitly
+  				ucm=get_menu_key1(&itemp_key);
+..\src\task_management.c(785): warning:  #177-D: variable "i"  was declared but never referenced
+  				u8_t i;
+..\src\task_management.c(971): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  								if((task_t.exist==(u32_t)EXIST) &&((u32_t) (task_t.key[uci])))
+..\src\task_management.c(286): warning:  #550-D: variable "user_code"  was set but never used
+  	u16_t user_code;        
+..\src\task_management.c(298): warning:  #550-D: variable "ucstate"  was set but never used
+  	u8_t  ucstate;
+..\src\task_management.c(299): warning:  #550-D: variable "ucstatus"  was set but never used
+  	u8_t  ucstatus;	
+..\src\task_management.c(3058): warning:  #223-D: function "find_user_sd1" declared implicitly
+         sdlocation=find_user_sd1(suser_code);
+..\src\task_management.c(3095): warning:  #223-D: function "Find_card" declared implicitly
+  		if (Find_card(card_id) != -1)		
+..\src\task_management.c(3227): warning:  #223-D: function "Find_card" declared implicitly
+  				if ((Find_card(card_id) != -1) &&(user_t.user_id == suser_code) )
+..\src\task_management.c(2960): warning:  #177-D: variable "location_temp"  was declared but never referenced
+  	s16_t sdlocation,location_temp;
+..\src\task_management.c: 18 warnings, 0 errors
+compiling ethernet.c...
+compiling arp.c...
+compiling ipv6.c...
+compiling icmp.c...
+compiling ipv4_frag.c...
+compiling ipv4.c...
+compiling ipv6_frag.c...
+compiling mld.c...
+compiling icmpv6.c...
+compiling slaac.c...
+compiling ndp.c...
+compiling ip.c...
+compiling tcp.c...
+compiling tcp_timer.c...
+compiling tcp_fsm.c...
+compiling udp.c...
+compiling raw_socket.c...
+compiling tcp_misc.c...
+compiling socket.c...
+compiling dns_cache.c...
+compiling bsd_socket.c...
+compiling dns_client.c...
+compiling dns_common.c...
+compiling mdns_client.c...
+compiling dns_debug.c...
+compiling nbns_client.c...
+compiling mdns_common.c...
+compiling nbns_responder.c...
+compiling mdns_responder.c...
+compiling dhcp_common.c...
+compiling dhcp_client.c...
+compiling dhcp_debug.c...
+compiling nbns_common.c...
+compiling dhcpv6_client.c...
+compiling dhcpv6_debug.c...
+compiling dhcpv6_common.c...
+compiling igmp_common.c...
+compiling dp83848_driver.c...
+compiling net_misc.c...
+compiling lpc23xx_eth_driver.c...
+compiling ethernet_misc.c...
+compiling ipv4_misc.c...
+compiling dhcp_client_misc.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\cyclone_tcp\dhcp\dhcp_client_misc.c: 2 warnings, 0 errors
+compiling igmp_host.c...
+compiling igmp_host_misc.c...
+compiling socket_misc.c...
+compiling spi.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Drivers\SPI\spi.c: 2 warnings, 0 errors
+compiling i2c.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Drivers\I2C\i2c.c(203): warning:  #120-D: return value type does not match the function type
+  	return block_value;
+..\src\Drivers\I2C\i2c.c: 3 warnings, 0 errors
+compiling wdt.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Drivers\WDT\wdt.c: 2 warnings, 0 errors
+compiling adc.c...
+compiling dhcp_client_fsm.c...
+compiling timer.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\KEYPAD\KEYPAD.h(9): warning:  #1295-D: Deprecated declaration lcd_keypad - give arg types
+  void lcd_keypad();
+..\src\Drivers\TIMER\timer.c(24): warning:  #61-D: integer operation result is out of range
+               FIO1CLR= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(24): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1CLR= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(26): warning:  #61-D: integer operation result is out of range
+               FIO1SET= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(26): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1SET= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(29): warning:  #61-D: integer operation result is out of range
+               FIO1CLR= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(29): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1CLR= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(31): warning:  #61-D: integer operation result is out of range
+              FIO1SET= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(31): warning:  #68-D: integer conversion resulted in a change of sign
+              FIO1SET= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(34): warning:  #61-D: integer operation result is out of range
+               FIO1CLR= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(34): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1CLR= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(36): warning:  #61-D: integer operation result is out of range
+               FIO1SET= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(36): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1SET= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(153): warning:  #61-D: integer operation result is out of range
+  						if(AD0DR1 & (1<<31))
+..\src\Drivers\TIMER\timer.c(153): warning:  #68-D: integer conversion resulted in a change of sign
+  						if(AD0DR1 & (1<<31))
+..\src\Drivers\TIMER\timer.c(155): warning:  #223-D: function "read_ac_adc_ch" declared implicitly
+  							us_ac_power_volt = read_ac_adc_ch();
+..\src\Drivers\TIMER\timer.c(159): warning:  #61-D: integer operation result is out of range
+  								if(AD0DR0 & (1<<31))
+..\src\Drivers\TIMER\timer.c(159): warning:  #68-D: integer conversion resulted in a change of sign
+  								if(AD0DR0 & (1<<31))
+..\src\Drivers\TIMER\timer.c(161): warning:  #223-D: function "read_dc_adc_ch" declared implicitly
+  									us_bat_volt = read_dc_adc_ch();
+..\src\Drivers\TIMER\timer.c(327): warning:  #61-D: integer operation result is out of range
+  		FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(327): warning:  #68-D: integer conversion resulted in a change of sign
+  		FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(328): warning:  #61-D: integer operation result is out of range
+  		FIO1CLR  = (8 << LOCK_DSHIFT) & LOCK_DMASK;     
+..\src\Drivers\TIMER\timer.c(328): warning:  #61-D: integer operation result is out of range
+  		FIO1CLR  = (8 << LOCK_DSHIFT) & LOCK_DMASK;     
+..\src\Drivers\TIMER\timer.c(334): warning:  #61-D: integer operation result is out of range
+  		 FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p                   
+..\src\Drivers\TIMER\timer.c(334): warning:  #68-D: integer conversion resulted in a change of sign
+  		 FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p                   
+..\src\Drivers\TIMER\timer.c(335): warning:  #61-D: integer operation result is out of range
+  		 FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(335): warning:  #61-D: integer operation result is out of range
+  		 FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(364): warning:  #61-D: integer operation result is out of range
+  			 FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(364): warning:  #68-D: integer conversion resulted in a change of sign
+  			 FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(365): warning:  #61-D: integer operation result is out of range
+  			 FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(365): warning:  #61-D: integer operation result is out of range
+  			 FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(366): warning:  #61-D: integer operation result is out of range
+  			 FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(366): warning:  #61-D: integer operation result is out of range
+  			 FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(370): warning:  #61-D: integer operation result is out of range
+  			 FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(370): warning:  #68-D: integer conversion resulted in a change of sign
+  			 FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(371): warning:  #61-D: integer operation result is out of range
+  			 FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK ;
+..\src\Drivers\TIMER\timer.c(371): warning:  #61-D: integer operation result is out of range
+  			 FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK ;
+..\src\Drivers\TIMER\timer.c(385): warning:  #61-D: integer operation result is out of range
+  			FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(385): warning:  #68-D: integer conversion resulted in a change of sign
+  			FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(386): warning:  #61-D: integer operation result is out of range
+  			FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK; 
+..\src\Drivers\TIMER\timer.c(386): warning:  #61-D: integer operation result is out of range
+  			FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK; 
+..\src\Drivers\TIMER\timer.c(392): warning:  #61-D: integer operation result is out of range
+  				FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(392): warning:  #68-D: integer conversion resulted in a change of sign
+  				FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(393): warning:  #61-D: integer operation result is out of range
+  			  FIO1SET = (8<< LOCK_DSHIFT)& LOCK_DMASK;     
+..\src\Drivers\TIMER\timer.c(393): warning:  #61-D: integer operation result is out of range
+  			  FIO1SET = (8<< LOCK_DSHIFT)& LOCK_DMASK;     
+..\src\Drivers\TIMER\timer.c(409): warning:  #61-D: integer operation result is out of range
+  		FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(409): warning:  #68-D: integer conversion resulted in a change of sign
+  		FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(410): warning:  #61-D: integer operation result is out of range
+  		FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(410): warning:  #61-D: integer operation result is out of range
+  		FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(411): warning:  #61-D: integer operation result is out of range
+  		FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(411): warning:  #61-D: integer operation result is out of range
+  		FIO1CLR= (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(415): warning:  #61-D: integer operation result is out of range
+  		FIO1DIR |= LOCK_DMASK;                          
+..\src\Drivers\TIMER\timer.c(415): warning:  #68-D: integer conversion resulted in a change of sign
+  		FIO1DIR |= LOCK_DMASK;                          
+..\src\Drivers\TIMER\timer.c(416): warning:  #61-D: integer operation result is out of range
+  		FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(416): warning:  #61-D: integer operation result is out of range
+  		FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(419): warning:  #61-D: integer operation result is out of range
+  		FIO1DIR &= ~LOCK_DMASK; //set D0->D3 are input
+..\src\Drivers\TIMER\timer.c(423): warning:  #61-D: integer operation result is out of range
+  		lock_state[bit_read]=((FIO1PIN & LOCK_DMASK) >> (LOCK_DSHIFT));
+..\src\Drivers\TIMER\timer.c(423): warning:  #68-D: integer conversion resulted in a change of sign
+  		lock_state[bit_read]=((FIO1PIN & LOCK_DMASK) >> (LOCK_DSHIFT));
+..\src\Drivers\TIMER\timer.c(431): warning:  #61-D: integer operation result is out of range
+  		FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(431): warning:  #68-D: integer conversion resulted in a change of sign
+  		FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p
+..\src\Drivers\TIMER\timer.c(432): warning:  #61-D: integer operation result is out of range
+  		FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c(432): warning:  #61-D: integer operation result is out of range
+  		FIO1SET = (8 << LOCK_DSHIFT)& LOCK_DMASK;
+..\src\Drivers\TIMER\timer.c: 64 warnings, 0 errors
+compiling rtc.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Drivers\RTC\rtc.c: 2 warnings, 0 errors
+compiling LED.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\LED\LED.c(18): warning:  #223-D: function "send_i2c_cmd" declared implicitly
+  	if(!send_i2c_cmd())
+..\src\Middleware\LED\LED.c(34): warning:  #223-D: function "send_i2c_cmd" declared implicitly
+  	send_i2c_cmd();
+..\src\Middleware\LED\LED.c: 4 warnings, 0 errors
+compiling uart.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Drivers\UART\uart.c(25): warning:  #223-D: function "set_timeout" declared implicitly
+  	timeout = set_timeout(5000);
+..\src\Drivers\UART\uart.c(29): warning:  #223-D: function "chk_timeout" declared implicitly
+  		if (chk_timeout(timeout))
+..\src\Drivers\UART\uart.c(62): warning:  #223-D: function "set_timeout" declared implicitly
+  	timeout = set_timeout(1000);
+..\src\Drivers\UART\uart.c(66): warning:  #223-D: function "chk_timeout" declared implicitly
+  		if (chk_timeout(timeout))
+..\src\Drivers\UART\uart.c(123): warning:  #223-D: function "set_timeout" declared implicitly
+      timeout = set_timeout(1000);
+..\src\Drivers\UART\uart.c(127): warning:  #223-D: function "chk_timeout" declared implicitly
+          if (chk_timeout(timeout))
+..\src\Drivers\UART\uart.c(409): warning:  #550-D: variable "ch"  was set but never used
+      u8_t ch;
+..\src\Drivers\UART\uart.c: 9 warnings, 0 errors
+compiling RFID.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\RFID\RFID.c(22): warning:  #223-D: function "send_i2c_cmd" declared implicitly
+  	if(!send_i2c_cmd())
+..\src\Middleware\RFID\RFID.c: 3 warnings, 0 errors
+compiling EEPROM.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\EEPROM\EEPROM.c: 2 warnings, 0 errors
+compiling LCD.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\LCD\LCD.c(29): warning:  #61-D: integer operation result is out of range
+      FIO1DIR |= LCD_DMASK;
+..\src\Middleware\LCD\LCD.c(29): warning:  #68-D: integer conversion resulted in a change of sign
+      FIO1DIR |= LCD_DMASK;
+..\src\Middleware\LCD\LCD.c(30): warning:  #61-D: integer operation result is out of range
+      FIO1CLR = LCD_DMASK;
+..\src\Middleware\LCD\LCD.c(30): warning:  #68-D: integer conversion resulted in a change of sign
+      FIO1CLR = LCD_DMASK;
+..\src\Middleware\LCD\LCD.c(32): warning:  #61-D: integer operation result is out of range
+      FIO1SET = (info << LCD_DSHIFT) & LCD_DMASK;
+..\src\Middleware\LCD\LCD.c(32): warning:  #68-D: integer conversion resulted in a change of sign
+      FIO1SET = (info << LCD_DSHIFT) & LCD_DMASK;
+..\src\Middleware\LCD\LCD.c: 8 warnings, 0 errors
+compiling AC_DC_VOLT.c...
+compiling BUZZER.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\BUZZER\BUZZER.c: 2 warnings, 0 errors
+compiling CLOCK_CALNDR.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\CLOCK_CALNDR\CLOCK_CALNDR.c: 2 warnings, 0 errors
+compiling DOOR.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\DOOR\DOOR.c: 2 warnings, 0 errors
+compiling KEYPAD.c...
+..\src\menu_main.h(728): warning:  #1295-D: Deprecated declaration emerg_remove_return_key - give arg types
+  extern int emerg_remove_return_key();	
+..\src\menu_main.h(794): warning:  #1295-D: Deprecated declaration ble_door_open - give arg types
+  extern void ble_door_open();
+..\src\Middleware\KEYPAD\KEYPAD.h(9): warning:  #1295-D: Deprecated declaration lcd_keypad - give arg types
+  void lcd_keypad();
+..\src\Middleware\KEYPAD\KEYPAD.c(44): warning:  #61-D: integer operation result is out of range
+      FIO1DIR &= ~LOCK_DMASK;                         // Databus should be input
+..\src\Middleware\KEYPAD\KEYPAD.c(54): warning:  #61-D: integer operation result is out of range
+      uidata = (FIO1PIN & LOCK_DMASK) >> LOCK_DSHIFT;
+..\src\Middleware\KEYPAD\KEYPAD.c(54): warning:  #68-D: integer conversion resulted in a change of sign
+      uidata = (FIO1PIN & LOCK_DMASK) >> LOCK_DSHIFT;
+..\src\Middleware\KEYPAD\KEYPAD.c(143): warning:  #61-D: integer operation result is out of range
+          FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p                   
+..\src\Middleware\KEYPAD\KEYPAD.c(143): warning:  #68-D: integer conversion resulted in a change of sign
+          FIO1DIR |= LOCK_DMASK;                           //set d0 to d3 are o/p                   
+..\src\Middleware\KEYPAD\KEYPAD.c(147): warning:  #61-D: integer operation result is out of range
+               FIO1CLR= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(147): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1CLR= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(149): warning:  #61-D: integer operation result is out of range
+               FIO1SET= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(149): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1SET= (1U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(152): warning:  #61-D: integer operation result is out of range
+               FIO1CLR= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(152): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1CLR= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(154): warning:  #61-D: integer operation result is out of range
+               FIO1SET= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(154): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1SET= (2U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(157): warning:  #61-D: integer operation result is out of range
+               FIO1CLR= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(157): warning:  #68-D: integer conversion resulted in a change of sign
+               FIO1CLR= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(159): warning:  #61-D: integer operation result is out of range
+  						 FIO1SET= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c(159): warning:  #68-D: integer conversion resulted in a change of sign
+  						 FIO1SET= (4U << LOCK_DSHIFT) & LOCK_DMASK;
+..\src\Middleware\KEYPAD\KEYPAD.c: 20 warnings, 0 errors
+linking...
+Program Size: Code=203604 RO-data=10140 RW-data=724 ZI-data=39324  
+FromELF: creating hex file...
+After Build - User command #1: C:\Keil_v5\\ARM\ARMCC\bin\fromelf.exe --bin --output=MyKee.bin .\ouput\MyKee.axf
+".\ouput\MyKee.axf" - 0 Error(s), 288 Warning(s).
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>

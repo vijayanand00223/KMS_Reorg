@@ -1,0 +1,14 @@
+.\ouput\date_time.o: ..\src\common\date_time.c
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\date_time.o: ..\src\common\date_time.h
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\ouput\date_time.o: ..\src\common\os_port.h
+.\ouput\date_time.o: ..\src\os_port_config.h
+.\ouput\date_time.o: ..\src\common\compiler_port.h
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\date_time.o: ..\src\common\os_port_none.h
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\date_time.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h

@@ -1,0 +1,14 @@
+.\ouput\debug.o: ..\src\debug.c
+.\ouput\debug.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\debug.o: ..\src\common\debug.h
+.\ouput\debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\debug.o: ..\src\common\os_port.h
+.\ouput\debug.o: ..\src\os_port_config.h
+.\ouput\debug.o: ..\src\common\compiler_port.h
+.\ouput\debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\debug.o: ..\src\common\os_port_none.h
+.\ouput\debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\debug.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h

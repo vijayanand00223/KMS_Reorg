@@ -1,0 +1,14 @@
+.\ouput\i2c.o: ..\src\Drivers\I2C\i2c.c
+.\ouput\i2c.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\i2c.o: ..\src\Drivers\I2C\i2c.h
+.\ouput\i2c.o: ..\src\ticker_itrp.h
+.\ouput\i2c.o: ..\src\menu_main.h
+.\ouput\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\i2c.o: ..\src\sbl_config.h
+.\ouput\i2c.o: ..\src\common\compiler_port.h
+.\ouput\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\i2c.o: ..\src\aes.h

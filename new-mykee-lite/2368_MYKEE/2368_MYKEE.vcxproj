@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D3A7D29F-029B-473F-8625-87F22732091A}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.nxp_lpc</BSP_ID>
+    <BSP_VERSION>2.1</BSP_VERSION>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>10.3.1/10.2.90/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)nxp_lpc.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>10.3.1/10.2.90/r1</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)nxp_lpc.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src;..\src\nxp\devices\lpc23xx;..\src\common;..\src\cyclone_tcp;..\..\cyclone_tcp_demo;..\src\cyclone_crypto;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>flash_layout;LPC12378 USE_LPC2378_STK;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\src;..\src\nxp\devices\lpc23xx;..\src\common;..\src\cyclone_tcp;..\..\cyclone_tcp_demo;..\src\cyclone_crypto;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>flash_layout;LPC12378 USE_LPC2378_STK;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\keil\retarget.c" />
+    <ClCompile Include="..\keil\startup_lpc23xx.s" />
+    <ClCompile Include="..\src\cyclone_tcp\core\ethernet_misc.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\net_misc.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\socket_misc.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_client_misc.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_client_fsm.c" />
+    <ClCompile Include="..\src\cyclone_tcp\drivers\mac\lpc23xx_eth_driver.c" />
+    <ClCompile Include="..\src\cyclone_tcp\drivers\phy\dp83848_driver.c" />
+    <ClCompile Include="..\src\cyclone_tcp\igmp\igmp_common.c" />
+    <ClCompile Include="..\src\cyclone_tcp\igmp\igmp_host.c" />
+    <ClCompile Include="..\src\cyclone_tcp\igmp\igmp_host_misc.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\ipv4_misc.c" />
+    <ClCompile Include="..\src\debug.c" />
+    <ClCompile Include="..\src\readfifo.S" />
+    <ClCompile Include="..\src\target.c" />
+    <ClCompile Include="..\src\task_management.c" />
+    <ClCompile Include="..\src\ticker.c" />
+    <ClCompile Include="..\src\uart.c" />
+    <ClCompile Include="..\src\mci_menu.c" />
+    <ClCompile Include="..\src\login_menu.c" />
+    <ClCompile Include="..\src\protocol_comm.c" />
+    <ClCompile Include="..\src\telnet_server.c" />
+    <ClCompile Include="..\src\main.c" />
+    <ClCompile Include="..\src\common_func.c" />
+    <ClCompile Include="..\src\msg_menu.c" />
+    <ClCompile Include="..\src\display_msg.c" />
+    <ClCompile Include="..\src\util_menu.c" />
+    <ClCompile Include="..\src\pin_menu.c" />
+    <ClCompile Include="..\src\key_menu.c" />
+    <ClCompile Include="..\src\aka_sys.c" />
+    <ClCompile Include="..\src\M25P16.c" />
+    <ClCompile Include="..\src\i2c.c" />
+    <ClCompile Include="..\src\tcp_client_event.c" />
+    <ClCompile Include="..\src\ble_commn.c" />
+    <ClCompile Include="..\src\aesencriptionwipro.c" />
+    <ClCompile Include="..\src\tcp_client_hb.c" />
+    <ClCompile Include="..\src\tcp_client_fw.c" />
+    <ClCompile Include="..\src\common\endian.c" />
+    <ClCompile Include="..\src\common\os_port_none.c" />
+    <ClCompile Include="..\src\common\date_time.c" />
+    <ClCompile Include="..\src\common\str.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\net.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\net_mem.c" />
+    <ClCompile Include="..\src\cyclone_tcp\drivers\lpc23xx_eth.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\nic.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\ethernet.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\arp.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\ipv4.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\ipv4_frag.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\icmp.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\igmp.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\ipv6.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\ipv6_frag.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\icmpv6.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\mld.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\ndp.c" />
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\slaac.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\ip.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp_fsm.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp_misc.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp_timer.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\udp.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\socket.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\bsd_socket.c" />
+    <ClCompile Include="..\src\cyclone_tcp\core\raw_socket.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_cache.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_client.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_common.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_debug.c" />
+    <ClCompile Include="..\src\cyclone_tcp\mdns\mdns_client.c" />
+    <ClCompile Include="..\src\cyclone_tcp\mdns\mdns_responder.c" />
+    <ClCompile Include="..\src\cyclone_tcp\mdns\mdns_common.c" />
+    <ClCompile Include="..\src\cyclone_tcp\netbios\nbns_client.c" />
+    <ClCompile Include="..\src\cyclone_tcp\netbios\nbns_responder.c" />
+    <ClCompile Include="..\src\cyclone_tcp\netbios\nbns_common.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_client.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_common.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_debug.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_client.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_common.c" />
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_debug.c" />
+    <ClInclude Include="..\src\aes.h" />
+    <ClInclude Include="..\src\common\compiler_port.h" />
+    <ClInclude Include="..\src\common\os_port_chibios.h" />
+    <ClInclude Include="..\src\common\os_port_cmsis_rtos.h" />
+    <ClInclude Include="..\src\common\os_port_freertos.h" />
+    <ClInclude Include="..\src\common\os_port_rtx.h" />
+    <ClInclude Include="..\src\common\os_port_sys_bios.h" />
+    <ClInclude Include="..\src\common\os_port_ucos2.h" />
+    <ClInclude Include="..\src\common\os_port_ucos3.h" />
+    <ClInclude Include="..\src\common\os_port_windows.h" />
+    <ClInclude Include="..\src\cpu_endian.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\ethernet_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\net_legacy.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\net_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\socket_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_client_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_server.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dns_sd\dns_sd.h" />
+    <ClInclude Include="..\src\cyclone_tcp\drivers\mac\lpc23xx_eth_driver.h" />
+    <ClInclude Include="..\src\cyclone_tcp\drivers\phy\dp83848_driver.h" />
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_common.h" />
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_host.h" />
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_host_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_router.h" />
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_router_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_snooping.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\auto_ip.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\ipv4_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_pmtu.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_routing.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp_cache.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp_router_adv.h" />
+    <ClInclude Include="..\src\cyclone_tcp\mibs\mib2_module.h" />
+    <ClInclude Include="..\src\cyclone_tcp\mibs\mib_common.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ppp\chap.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ppp\pap.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ppp\ppp.h" />
+    <ClInclude Include="..\src\i2c.h" />
+    <ClInclude Include="..\src\nxp\devices\lpc23xx\lpc23xx.h" />
+    <ClInclude Include="..\src\sbl_config.h" />
+    <ClInclude Include="..\src\sbl_iap.h" />
+    <ClInclude Include="..\src\tcp_client_fw.h" />
+    <ClInclude Include="D:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
+    <ClInclude Include="D:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\ctype.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\stdio.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\stdlib.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\string.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\sys\time.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\time.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\_ansi.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\limits.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\syslimits.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint-gcc.h" />
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h" />
+    <None Include="..\keil\AKA2.2.9.map" />
+    <None Include="..\keil\lpc2378_flash.sct" />
+    <None Include="..\keil\Mykee.uvprojx" />
+    <None Include="..\keil\readfifo.lst" />
+    <None Include="..\keil\startup_lpc23xx.lst" />
+    <None Include="nxp_lpc.props" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\can_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\clock_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\cmp_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\crc_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\dac_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\eeprom_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\emc_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\enet_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpdma_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpioint_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpio_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2c_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2s_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\iocon_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\lcd_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\pmu_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ritimer_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\rtc_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdc_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdmmc_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\spi_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ssp_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\stopwatch_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sysctl_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sysinit_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\timer_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\uart_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\wwdt_17xx_40xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\eeprom.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\fpu_init.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\iap.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\ring_buffer.c" />
+    <ClCompile Include="$(BSP_ROOT)\Common\startup.c" />
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\StartupFiles\ORIGINAL_cr_startup_lpc175x_6x.c" />
+    <ClInclude Include="..\src\os_port_config.h" />
+    <ClInclude Include="..\src\net_config.h" />
+    <ClInclude Include="..\src\freertosconfig.h" />
+    <ClInclude Include="..\src\ticker_itrp.h" />
+    <ClInclude Include="..\src\menu_main.h" />
+    <ClInclude Include="..\src\sdcard_mci.h" />
+    <ClInclude Include="..\src\M25P16.h" />
+    <ClInclude Include="..\src\telnet_server.h" />
+    <ClInclude Include="..\src\tcp_client_event.h" />
+    <ClInclude Include="..\src\tcp_client_hb.h" />
+    <ClInclude Include="..\src\common\endian.h" />
+    <ClInclude Include="..\src\common\os_port.h" />
+    <ClInclude Include="..\src\common\os_port_none.h" />
+    <ClInclude Include="..\src\common\date_time.h" />
+    <ClInclude Include="..\src\common\str.h" />
+    <ClInclude Include="..\src\common\error.h" />
+    <ClInclude Include="..\src\common\debug.h" />
+    <ClInclude Include="..\src\cyclone_tcp\drivers\dp83848.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\net.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\net_mem.h" />
+    <ClInclude Include="..\src\cyclone_tcp\drivers\lpc23xx_eth.h" />
+    <ClInclude Include="..\src\cyclone_tcp\drivers\ksz8721.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\nic.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\ethernet.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\arp.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\ipv4.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\ipv4_frag.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\icmp.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\igmp.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_frag.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\icmpv6.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\mld.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\slaac.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\ip.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp_fsm.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp_misc.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp_timer.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\udp.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\socket.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\bsd_socket.h" />
+    <ClInclude Include="..\src\cyclone_tcp\core\raw_socket.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_cache.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_client.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_common.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_debug.h" />
+    <ClInclude Include="..\src\cyclone_tcp\mdns\mdns_client.h" />
+    <ClInclude Include="..\src\cyclone_tcp\mdns\mdns_responder.h" />
+    <ClInclude Include="..\src\cyclone_tcp\mdns\mdns_common.h" />
+    <ClInclude Include="..\src\cyclone_tcp\netbios\nbns_client.h" />
+    <ClInclude Include="..\src\cyclone_tcp\netbios\nbns_responder.h" />
+    <ClInclude Include="..\src\cyclone_tcp\netbios\nbns_common.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_client.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_common.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_debug.h" />
+    <ClInclude Include="..\src\cyclone_tcp\ftp\ftp_client.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_client.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_common.h" />
+    <ClInclude Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_debug.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\arm_common_tables.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\arm_math.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm0.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm0plus.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm3.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm4_simd.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cmFunc.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cmInstr.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_sc000.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_sc300.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\RTOS\cmsis_os.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\can_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_lpc175x_6x.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_lpc177x_8x.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_lpc407x_8x.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\clock_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\cmp_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\cmsis.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\crc_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\dac_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\eeprom_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\emc_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\enet_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\fmc_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpdma_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpioint_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpio_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2c_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2s_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\iocon_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\lcd_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\mcpwm_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\pmu_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\qei_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ritimer_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\romapi_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\rtc_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdc_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdmmc_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\spifi_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\spi_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ssp_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sysctl_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\timer_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\uart_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\usb_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\wwdt_17xx_40xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_175x_6x\cmsis_175x_6x.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_177x_8x\cmsis_177x_8x.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\eeprom.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\error.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\fpu_init.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\iap.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\lpc_types.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\ring_buffer.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\sdmmc.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\stopwatch.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_adc.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_cdc.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_cdcuser.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_core.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_desc.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_dfu.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_dfuuser.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_hid.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_hiduser.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_hw.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_msc.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_mscuser.h" />
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_rom_api.h" />
+    <ClInclude Include="$(BSP_ROOT)\Common\sys_config.h" />
+    <None Include="2368_MYKEE-Debug.vgdbsettings" />
+    <None Include="2368_MYKEE-Release.vgdbsettings" />
+    <None Include="nxp_lpc.xml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+.\ouput\buzzer.o: ..\src\Middleware\BUZZER\BUZZER.c
+.\ouput\buzzer.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\buzzer.o: ..\src\Middleware\BUZZER\BUZZER.h
+.\ouput\buzzer.o: ..\src\ticker_itrp.h
+.\ouput\buzzer.o: ..\src\menu_main.h
+.\ouput\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\buzzer.o: ..\src\sbl_config.h
+.\ouput\buzzer.o: ..\src\common\compiler_port.h
+.\ouput\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\buzzer.o: ..\src\aes.h

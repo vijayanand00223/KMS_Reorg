@@ -1,0 +1,16 @@
+.\ouput\bio.o: ..\src\bio.c
+.\ouput\bio.o: ..\src\menu_main.h
+.\ouput\bio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\bio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\bio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\bio.o: ..\src\ticker_itrp.h
+.\ouput\bio.o: ..\src\sbl_config.h
+.\ouput\bio.o: ..\src\common\compiler_port.h
+.\ouput\bio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\bio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\bio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\bio.o: ..\src\aes.h
+.\ouput\bio.o: ..\src\Drivers\UART\uart.h
+.\ouput\bio.o: ..\src\Middleware\EEPROM\EEPROM.h
+.\ouput\bio.o: ..\src\Middleware\LCD\LCD.h
+.\ouput\bio.o: ..\src\Middleware\BUZZER\BUZZER.h

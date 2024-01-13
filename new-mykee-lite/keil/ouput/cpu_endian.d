@@ -1,0 +1,13 @@
+.\ouput\cpu_endian.o: ..\src\cpu_endian.c
+.\ouput\cpu_endian.o: ..\src\cpu_endian.h
+.\ouput\cpu_endian.o: ..\src\common\os_port.h
+.\ouput\cpu_endian.o: ..\src\os_port_config.h
+.\ouput\cpu_endian.o: ..\src\common\compiler_port.h
+.\ouput\cpu_endian.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\cpu_endian.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\cpu_endian.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\cpu_endian.o: ..\src\common\os_port_none.h
+.\ouput\cpu_endian.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\cpu_endian.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\cpu_endian.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\cpu_endian.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h

@@ -1,0 +1,14 @@
+.\ouput\uart.o: ..\src\Drivers\UART\uart.c
+.\ouput\uart.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\uart.o: ..\src\Drivers\UART\uart.h
+.\ouput\uart.o: ..\src\ticker_itrp.h
+.\ouput\uart.o: ..\src\menu_main.h
+.\ouput\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\uart.o: ..\src\sbl_config.h
+.\ouput\uart.o: ..\src\common\compiler_port.h
+.\ouput\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\uart.o: ..\src\aes.h

@@ -1,0 +1,15 @@
+.\ouput\eeprom.o: ..\src\Middleware\EEPROM\EEPROM.c
+.\ouput\eeprom.o: ..\src\nxp\devices\lpc23xx\LPC23xx.h
+.\ouput\eeprom.o: ..\src\Middleware\EEPROM\EEPROM.h
+.\ouput\eeprom.o: ..\src\ticker_itrp.h
+.\ouput\eeprom.o: ..\src\Drivers\SPI\SPI.h
+.\ouput\eeprom.o: ..\src\menu_main.h
+.\ouput\eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\eeprom.o: ..\src\sbl_config.h
+.\ouput\eeprom.o: ..\src\common\compiler_port.h
+.\ouput\eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\eeprom.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\eeprom.o: ..\src\aes.h

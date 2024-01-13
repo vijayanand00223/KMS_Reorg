@@ -1,0 +1,14 @@
+.\ouput\m25p16.o: ..\src\Drivers\SPI\M25P16.c
+.\ouput\m25p16.o: ..\src\nxp\devices\lpc23xx\LPC23xx.h
+.\ouput\m25p16.o: ..\src\Drivers\SPI\M25P16.h
+.\ouput\m25p16.o: ..\src\ticker_itrp.h
+.\ouput\m25p16.o: ..\src\menu_main.h
+.\ouput\m25p16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\m25p16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\m25p16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\m25p16.o: ..\src\sbl_config.h
+.\ouput\m25p16.o: ..\src\common\compiler_port.h
+.\ouput\m25p16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\m25p16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\m25p16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\m25p16.o: ..\src\aes.h

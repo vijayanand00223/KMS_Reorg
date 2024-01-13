@@ -1,0 +1,1017 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{804d5ae2-b983-44c9-8138-4d198d38c27d}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{a5efee9c-faa3-49d1-9ad1-ed7fbaea1b95}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{306430e3-6ed8-4b03-9e8b-103d5c0ae900}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\MainSource">
+      <UniqueIdentifier>{6cf28acb-30b3-4314-86c8-33b25b26b34f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Main Header">
+      <UniqueIdentifier>{8b571878-152d-425d-bdc1-b11bb88c3bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Common Sources">
+      <UniqueIdentifier>{91556a50-3d1b-43c3-bdab-b1b765b1d45f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Common Headers">
+      <UniqueIdentifier>{aa0651f1-433b-427e-a7d3-d65ef0531046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CycloneTCP Sources">
+      <UniqueIdentifier>{ff4361b6-45a5-4bee-8d9e-246468d4a9cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\CycloneTCP Headers">
+      <UniqueIdentifier>{29b60f04-3686-41c9-9ee9-6065852d02ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{a4ad6fb2-d044-47ec-b82d-041fe8c757c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\MainSource">
+      <UniqueIdentifier>{55389017-bd48-4bd3-ae38-080c9fa7dae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Main Header">
+      <UniqueIdentifier>{91daa899-c962-4a06-bb63-0cbdba164d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Common Sources">
+      <UniqueIdentifier>{f478dea1-4cc9-485f-8544-c631567f7a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Common Headers">
+      <UniqueIdentifier>{dda500f3-c0c3-48cf-8aa5-98caba1854b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CycloneTCP Sources">
+      <UniqueIdentifier>{f8fcb604-7f4c-4bb3-a027-f5060c273323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\CycloneTCP Headers">
+      <UniqueIdentifier>{149e9a6d-90a7-47c3-820e-36bc56ffc216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{f2587612-4119-4ed4-ae74-6b6f741583f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{e744245b-e5ce-4bd4-8178-21cabfe7cf7e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\keil\retarget.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\debug.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\target.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ticker.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\uart.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\mci_menu.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\login_menu.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol_comm.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\telnet_server.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common_func.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\msg_menu.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\display_msg.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util_menu.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\pin_menu.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\key_menu.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\aka_sys.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\M25P16.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\i2c.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_client_event.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ble_commn.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\aesencriptionwipro.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_client_hb.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tcp_client_fw.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\endian.c">
+      <Filter>Source files\Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\os_port_none.c">
+      <Filter>Source files\Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\date_time.c">
+      <Filter>Source files\Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\common\str.c">
+      <Filter>Source files\Common Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\net.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\net_mem.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\drivers\lpc23xx_eth.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\nic.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\ethernet.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\arp.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\ipv4.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\ipv4_frag.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\icmp.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\igmp.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\ipv6.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\ipv6_frag.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\icmpv6.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\mld.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\ndp.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv6\slaac.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\ip.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp_fsm.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp_misc.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\tcp_timer.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\udp.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\socket.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\bsd_socket.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\raw_socket.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_cache.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_client.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_common.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dns\dns_debug.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\mdns\mdns_client.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\mdns\mdns_responder.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\mdns\mdns_common.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\netbios\nbns_client.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\netbios\nbns_responder.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\netbios\nbns_common.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_client.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_common.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_debug.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_client.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_common.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_debug.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <None Include="nxp_lpc.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\can_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\clock_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\cmp_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\crc_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\dac_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\eeprom_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\emc_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\enet_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpdma_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpioint_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpio_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2c_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2s_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\iocon_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\lcd_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\pmu_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ritimer_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\rtc_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdc_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdmmc_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\spi_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ssp_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\stopwatch_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sysctl_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sysinit_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\timer_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\uart_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\wwdt_17xx_40xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\eeprom.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\fpu_init.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\iap.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\ring_buffer.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\Common\startup.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\StartupFiles\ORIGINAL_cr_startup_lpc175x_6x.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\src\os_port_config.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net_config.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\freertosconfig.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ticker_itrp.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\menu_main.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sdcard_mci.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\M25P16.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\telnet_server.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tcp_client_event.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tcp_client_hb.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\endian.h">
+      <Filter>Header files\Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port.h">
+      <Filter>Header files\Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_none.h">
+      <Filter>Header files\Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\date_time.h">
+      <Filter>Header files\Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\str.h">
+      <Filter>Header files\Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\error.h">
+      <Filter>Header files\Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\debug.h">
+      <Filter>Header files\Common Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\drivers\dp83848.h">
+      <Filter>Header files\CycloneTCP Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\net.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\net_mem.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\drivers\lpc23xx_eth.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\drivers\ksz8721.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\nic.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\ethernet.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\arp.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\ipv4.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\ipv4_frag.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\icmp.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\igmp.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_frag.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\icmpv6.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\mld.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\slaac.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\ip.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp_fsm.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\tcp_timer.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\udp.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\socket.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\bsd_socket.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\raw_socket.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_cache.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_client.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_common.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dns\dns_debug.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\mdns\mdns_client.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\mdns\mdns_responder.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\mdns\mdns_common.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\netbios\nbns_client.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\netbios\nbns_responder.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\netbios\nbns_common.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_client.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_common.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_debug.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ftp\ftp_client.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_client.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_common.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_debug.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\arm_math.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm0.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm0plus.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm3.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm4.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cm4_simd.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cmFunc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_cmInstr.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_sc000.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include\core_sc300.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\RTOS\cmsis_os.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\can_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_lpc175x_6x.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_lpc177x_8x.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\chip_lpc407x_8x.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\clock_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\cmp_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\cmsis.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\crc_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\dac_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\eeprom_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\emc_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\enet_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\fmc_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpdma_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpioint_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\gpio_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2c_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\i2s_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\iocon_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\lcd_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\mcpwm_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\pmu_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\qei_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ritimer_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\romapi_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\rtc_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdc_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sdmmc_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\spifi_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\spi_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\ssp_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\sysctl_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\timer_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\uart_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\usb_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\wwdt_17xx_40xx.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_175x_6x\cmsis_175x_6x.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_177x_8x\cmsis_177x_8x.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\eeprom.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\error.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\fpu_init.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\iap.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\lpc_types.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\ring_buffer.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\sdmmc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common\stopwatch.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_adc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_cdc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_cdcuser.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_core.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_desc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_dfu.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_dfuuser.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_hid.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_hiduser.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_hw.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_msc.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_mscuser.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom\usbd_rom_api.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\Common\sys_config.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="2368_MYKEE-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="2368_MYKEE-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="nxp_lpc.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="..\keil\startup_lpc23xx.s" />
+    <ClCompile Include="..\src\readfifo.S" />
+    <ClCompile Include="..\src\task_management.c">
+      <Filter>Source files\MainSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\drivers\phy\dp83848_driver.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\drivers\mac\lpc23xx_eth_driver.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\igmp\igmp_common.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\net_misc.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcpv6\dhcpv6_client_misc.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\ethernet_misc.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\ipv4\ipv4_misc.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\igmp\igmp_host.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\igmp\igmp_host_misc.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\dhcp\dhcp_client_fsm.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\cyclone_tcp\core\socket_misc.c">
+      <Filter>Source files\CycloneTCP Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\_ansi.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\aes.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\auto_ip.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ppp\chap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\compiler_port.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\ctype.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dns_sd\dns_sd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\i2c.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_misc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_pmtu.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ipv6_routing.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\limits.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\nxp\devices\lpc23xx\lpc23xx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\mibs\mib_common.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\mibs\mib2_module.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp_cache.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp_misc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv6\ndp_router_adv.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\net_legacy.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_chibios.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_cmsis_rtos.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_freertos.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_rtx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_sys_bios.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_ucos2.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_ucos3.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\common\os_port_windows.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ppp\pap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ppp\ppp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sbl_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sbl_iap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint-gcc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\stdio.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\stdlib.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\string.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include-fixed\syslimits.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tcp_client_fw.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\time.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\SysGCC\arm-eabi\arm-none-eabi\include\sys\time.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\ethernet_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\net_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\core\socket_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_client_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\drivers\mac\lpc23xx_eth_driver.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\drivers\phy\dp83848_driver.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\ipv4\ipv4_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_common.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_host.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_host_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_router_misc.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_router.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\igmp\igmp_snooping.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cyclone_tcp\dhcp\dhcp_server.h">
+      <Filter>Header files\CycloneTCP Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\cpu_endian.h">
+      <Filter>Header files\Main Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\keil\AKA2.2.9.map" />
+    <None Include="..\keil\lpc2378_flash.sct" />
+    <None Include="..\keil\Mykee.uvprojx" />
+    <None Include="..\keil\readfifo.lst" />
+    <None Include="..\keil\startup_lpc23xx.lst" />
+  </ItemGroup>
+</Project>

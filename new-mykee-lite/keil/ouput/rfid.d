@@ -1,0 +1,15 @@
+.\ouput\rfid.o: ..\src\Middleware\RFID\RFID.c
+.\ouput\rfid.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\rfid.o: ..\src\Middleware\RFID\RFID.h
+.\ouput\rfid.o: ..\src\ticker_itrp.h
+.\ouput\rfid.o: ..\src\Drivers\I2C\i2c.h
+.\ouput\rfid.o: ..\src\menu_main.h
+.\ouput\rfid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\rfid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\rfid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\rfid.o: ..\src\sbl_config.h
+.\ouput\rfid.o: ..\src\common\compiler_port.h
+.\ouput\rfid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\rfid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\rfid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\rfid.o: ..\src\aes.h

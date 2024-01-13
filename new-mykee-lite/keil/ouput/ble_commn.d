@@ -1,0 +1,14 @@
+.\ouput\ble_commn.o: ..\src\ble_commn.c
+.\ouput\ble_commn.o: ..\src\menu_main.h
+.\ouput\ble_commn.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\ble_commn.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\ble_commn.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\ble_commn.o: ..\src\ticker_itrp.h
+.\ouput\ble_commn.o: ..\src\sbl_config.h
+.\ouput\ble_commn.o: ..\src\common\compiler_port.h
+.\ouput\ble_commn.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\ble_commn.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\ble_commn.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\ble_commn.o: ..\src\aes.h
+.\ouput\ble_commn.o: ..\src\Drivers\UART\uart.h
+.\ouput\ble_commn.o: ..\src\Middleware\LED\LED.h

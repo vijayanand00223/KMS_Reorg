@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2368_MYKEE", "2368_MYKEE.vcxproj", "{D3A7D29F-029B-473F-8625-87F22732091A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3A7D29F-029B-473F-8625-87F22732091A}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{D3A7D29F-029B-473F-8625-87F22732091A}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{D3A7D29F-029B-473F-8625-87F22732091A}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{D3A7D29F-029B-473F-8625-87F22732091A}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB7CD0C2-C582-41EA-A150-AF9FC612916A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/sternadevices
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 2368_MYKEE.vcxproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

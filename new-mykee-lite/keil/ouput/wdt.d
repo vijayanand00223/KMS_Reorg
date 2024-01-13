@@ -1,0 +1,14 @@
+.\ouput\wdt.o: ..\src\Drivers\WDT\wdt.c
+.\ouput\wdt.o: ..\src\nxp\devices\lpc23xx\lpc23xx.h
+.\ouput\wdt.o: ..\src\Drivers\WDT\wdt.h
+.\ouput\wdt.o: ..\src\ticker_itrp.h
+.\ouput\wdt.o: ..\src\menu_main.h
+.\ouput\wdt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\ouput\wdt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ouput\wdt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\ouput\wdt.o: ..\src\sbl_config.h
+.\ouput\wdt.o: ..\src\common\compiler_port.h
+.\ouput\wdt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\ouput\wdt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ouput\wdt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\ouput\wdt.o: ..\src\aes.h
